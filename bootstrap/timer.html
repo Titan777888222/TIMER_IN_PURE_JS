@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+    <link rel="stylesheet" href= "./dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href= "style.css">
+    <title >Timer</title>
+</head>
+
+<body>
+	<div class="container">
+		
+		<div class="row align-items-center">
+		  <div class="col">			
+		  </div>
+		  <div class="col" style="margin: 10%; border-radius: 3%; padding-top: 10%; padding-bottom: 10%; padding-left: 3%; padding-right: 3%;
+		  border-color: #e95216; box-shadow: 2.5px 2.5px 2.5px #ca470b33, 2.5px 2.5px 18px rgba(223, 115, 27, 2);" >
+			<div>
+				<div class="form-floating">
+					<input
+						class="form-control" 
+						id= "floatingInput"
+						class = "w-25 p-3" >
+					</input>
+				<!-- onChange = "onNewMessageChange()" -->
+					<label for="floatingTextarea" style="color: rgb(255, 193, 7)">Input your time</label>
+				</div>
+				<p id = "explanation" style="color: rgb(78, 28, 5)">Enter your time in the text box accoding to this example 00/00/00
+				</p>
+				<div class="d-grid gap-2 d-md-block"> 
+					<button type="button" onClick = "startСounting()" class="btn btn-outline-warning" data-bs-toggle="tooltip" data-bs-html="true" title="Enter the time you need at the top and click">Your time</button>
+					
+				</div>
+				
+				<div class="timeContainer">
+					<h1>
+						<span id ="hours" > 00 h</span>
+						<span id ="minutes" > 00 m</span>
+						<span id ="seconds" > 00 s</span>
+					</h1>  
+				 </div>
+				</div>
+		  </div>
+		  <div class="col">			
+		  </div>
+		</div>
+
+
+	</div>
+	<script src = 'totalValue.js'></script>
+   <!--  <script src = 'timer.js'></script> -->
+	
+</body>
+</html>
